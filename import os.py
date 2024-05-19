@@ -2,6 +2,8 @@ import os
 import pandas as pd
 import snowflake.connector
 
+
+
 def get_connection():
     return snowflake.connector.connect(
         user=os.getenv('SNOWFLAKE_USER'),
