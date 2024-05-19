@@ -6,13 +6,13 @@ import snowflake.connector
 
 def get_connection():
     return snowflake.connector.connect(
-        user=os.getenv('USER'),
-        password=os.getenv('PASSWORD'),
-        account=os.getenv('ACCOUNT'),
-        warehouse=os.getenv('WAREHOUSE'),
-        database=os.getenv('DATABASE'),
-        schema=os.getenv('SCHEMA'),
-        role=os.getenv('ROLE')
+        USER=os.getenv('USER'),
+        PASSWORD=os.getenv('PASSWORD'),
+        ACCOUNT=os.getenv('ACCOUNT'),
+        WAREHOUSE=os.getenv('WAREHOUSE'),
+        DATABASE=os.getenv('DATABASE'),
+        SCHEMA=os.getenv('SCHEMA'),
+        ROLE=os.getenv('ROLE')
     )
 
 def read_excel(file_path):
